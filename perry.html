@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <audio src="media/Perry The Platypus Theme Long.mp3" id="backgroundMusic" loop="loop"></audio>
         <div id="hatBorder"></div>
         <div id="hat"></div>
         <div id="hatBrimBorder"></div>
@@ -26,5 +27,10 @@
         </div>
     </div>
     <footer></footer>
+    <script>
+        document.addEventListener("click", e => {
+            document.getElementById("backgroundMusic").play()
+        })
+    </script>
 </body>
 </html>

@@ -5,6 +5,11 @@
     src: url("../fonts/Phineas\ y\ Ferb.ttf") format("truetype");
 }
 
-body {
-    font-family: Ferbtastic;
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#perryvdoof {
+    grid-column: 1/3;
 }
