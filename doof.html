@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Doofenshmirtz.webp">
+    <link rel="stylesheet" href="styles/doof.css">
     <title>Dr. Doofenshmirtz</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <audio src="media/doofenshmirtz-evil-incorporated-jingle.mp3" id="backgroundMusic"></audio>
+        <audio src="media/Doofenshmirtz Evil Incorporated - modified.mp3" id="backgroundMusicModified"></audio>
+    </header>
     <div id="content"></div>
     <footer></footer>
     <script>
-        document.addEventListener("click", e => {
-            document.getElementById("backgroundMusic").play()
+        document.addEventListener("mouseover", e => {
+            let rand = Math.floor(Math.random() * 10);
+            if(rand === 2) {
+                document.getElementById("backgroundMusicModified").play();
+            }
+            else {
+                document.getElementById("backgroundMusic").play();
+            }
         })
     </script>
 </body>

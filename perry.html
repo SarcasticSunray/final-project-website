@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perry the Platypus?!?!?!</title>
+    <link rel="icon" href="images/Perry-The-Platypus.png">
     <link rel="stylesheet" href="styles/perry.css">
+    <title>Perry the Platypus?!?!?!</title>
 </head>
 <body>
     <header>
-        <audio src="media/Perry The Platypus Theme Long.mp3" id="backgroundMusic" loop="loop"></audio>
-        <div id="hatBorder"></div>
-        <div id="hat"></div>
-        <div id="hatBrimBorder"></div>
-        <div id="hatBrim"></div>
+        <audio src="media/Perry The Platypus Theme Long.mp3" id="backgroundMusic"></audio>
     </header>
     <div id="content">
+        <div id="hat">
+            <div id="hatTop"></div>
+            <div id="hatBand"></div>
+            <div id="hatBrim"></div>
+        </div>
         <div id="face">
-            <div id="eye"></div>
-            <div id="eye"></div>
+            <div id="eye">
+                <div id="pupil"><div id="iris"></div></div>
+            </div>
+            <div id="eye">
+                <div id="pupil"><div id="iris"></div></div>
+            </div>
             <div id="nose"></div>
         </div>
         <div id="tail"></div>
@@ -28,7 +34,7 @@
     </div>
     <footer></footer>
     <script>
-        document.addEventListener("click", e => {
+        document.addEventListener("mouseover", e => {
             document.getElementById("backgroundMusic").play()
         })
     </script>
